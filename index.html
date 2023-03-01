@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Unit converter</title>
+    <link rel="icon" href="converter.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;500;600;700&family=Poppins:wght@100;200;500;600;700&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <form id="unitCalc" onsubmit="convertUnit(); return false">
+      <label for="unit">Enter the length<br />to be converted</label>
+      <br /><input type="number" name="unit" id="unit" />
+      <select name="unit_diff" id="unit_diff">
+        <option value="kil">kilometer(km)</option>
+        <option value="me">meter(m)</option>
+        <option value="cen">centimeter(cm)</option>
+        <option value="mil">millimeter(mm)</option>
+      </select>
+      <br />
+      <input
+        class="button-17"
+        type="submit"
+        name="unit"
+        value="Convert"
+      /><br />
+      <span id="resultContainer"></span> <br />
+      <span id="resultContainer2"></span> <br />
+      <span id="resultContainer3"></span>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
